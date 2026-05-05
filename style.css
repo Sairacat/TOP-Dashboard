@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-svg {
+.sidebar svg {
     display: inline-block;
     fill: white;
     height: 40px;
@@ -155,6 +155,35 @@ span {
     grid-column: 2;
     grid-row: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+}
+
+.header svg {
+  height: 30px;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header form {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="search"] {
+  width: 500px;
+  border-radius: 999px;
+  border: none;
+  background-color: #E2E8F0;
+}
+
+.user-information {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .main-content {
