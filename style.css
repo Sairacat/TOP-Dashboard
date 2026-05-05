@@ -68,14 +68,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
 }
 
+.sidebar-content-wrapper {
+  overflow: hidden;
+}
+
 svg {
     display: inline-block;
+    fill: white;
+    height: 40px;
 }
 
 span {
     color: white;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .sidebar-title {
@@ -83,24 +89,65 @@ span {
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    margin-bottom: 40px;
 }
+
+.sidebar-title > svg {
+  height: 75px;
+}
+
+.sidebar-title > span {
+  font-size: 25px;
+}
+
+.sidebar-unit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 5px 0;
+  transition: all 0.3 ease;
+}
+
+.sidebar-unit > svg {
+  margin-left: 25px;
+}
+
+.sidebar-unit:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 
 .toggle-btn {
     position: absolute;
-    top: 50%;
-    right: -15px;
-    width: 30px;
-    height: 30px;
+    top: 30%;
+    right: -20px;
+    width: 40px;
+    height: 40px;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 21px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    color: black;
+    border: 1px solid #5F6264;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3 ease;
 
+}
+
+.toggle-btn > svg {
+  height: 20px;
 }
 
 .toggle-btn:hover {
     cursor: pointer;
+    border-color: black ;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 
