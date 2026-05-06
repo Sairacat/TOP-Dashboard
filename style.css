@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 40px;
 }
 
-span {
+.sidebar-unit > span {
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -97,6 +97,8 @@ span {
 }
 
 .sidebar-title > span {
+  color: white;
+  font-weight: bolder;
   font-size: 25px;
 }
 
@@ -156,15 +158,28 @@ span {
     grid-row: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
+    transition: all 0.4 ease;
 }
+
 
 .header svg {
   height: 30px;
+  border-radius: 8px;
+}
+
+.header svg:hover {
+  cursor: pointer;
+  background-color: #E2E8F0;
 }
 
 .first-line {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.user-information > span {
+  font-weight: bolder;
 }
 
 .header form {
@@ -173,11 +188,62 @@ span {
   gap: 20px;
 }
 
+.header img:hover {
+  cursor: pointer;
+}
+
+.second-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-greeting {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.greeting-words {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.greeting-words > span {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.btn-group {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.btn-group > button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  color: white;
+  background-color: #3492D4;
+  font-weight: bolder;
+}
+
+.btn-group > button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 input[type="search"] {
   width: 500px;
+  height: 35px;
   border-radius: 999px;
   border: none;
   background-color: #E2E8F0;
+  padding-left: 10px;
+}
+
+input[type="search"]:focus {
+  caret-color: transparent;
 }
 
 .user-information {
