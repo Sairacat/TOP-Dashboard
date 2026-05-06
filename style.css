@@ -349,4 +349,16 @@ input[type="search"]:focus {
   border-radius: 8px;
   border-left: 10px solid indianred;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.main-card-title {
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.main-card-content {
+  opacity: 0.6;
+  font-weight: normal;
 }
